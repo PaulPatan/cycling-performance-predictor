@@ -1,0 +1,2 @@
+module BikeRidesHelper
+end

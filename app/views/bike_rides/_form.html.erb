@@ -1,0 +1,78 @@
+<%= form_with(model: bike_ride) do |form| %>
+
+  <%# if bike_ride.errors.any? %>
+<!--    <div style="color: red">-->
+<!--      <h2><%#= pluralize(bike_ride.errors.count, "error") %> prohibited this bike_ride from being saved:</h2>-->
+
+<!--      <ul>-->
+        <%# bike_ride.errors.each do |error| %>
+<!--          <li><%#= error.full_message %></li>-->
+        <%# end %>
+<!--      </ul>-->
+<!--    </div>-->
+  <%# end %>
+
+  <div>
+    <%= form.label :kilojoules, style: "display: block" %>
+    <%= form.text_field :kilojoules %>
+  </div>
+
+  <div>
+    <%= form.label :total_elevation_gain, style: "display: block" %>
+    <%= form.text_field :total_elevation_gain %>
+  </div>
+
+  <div>
+    <%= form.label :distance, style: "display: block" %>
+    <%= form.text_field :distance %>
+  </div>
+
+  <div>
+    <%= form.label :average_heartrate, style: "display: block" %>
+    <%= form.text_field :average_heartrate %>
+  </div>
+
+  <div>
+    <%= form.label :average_watts, style: "display: block" %>
+    <%= form.text_field :average_watts %>
+  </div>
+
+  <div>
+    <%= form.label :moving_time, style: "display: block" %>
+    <%= form.text_field :moving_time %>
+  </div>
+
+  <div>
+    <%= form.label :weighted_average_watts, style: "display: block" %>
+    <%= form.text_field :weighted_average_watts %>
+  </div>
+
+  <div>
+    <%= form.label :average_cadence, style: "display: block" %>
+    <%= form.text_field :average_cadence %>
+  </div>
+
+  <div>
+    <%= form.label :average_speed, style: "display: block" %>
+    <%= form.text_field :average_speed %>
+  </div>
+
+  <div>
+    <%= form.label :elapsed_time, style: "display: block" %>
+    <%= form.text_field :elapsed_time %>
+  </div>
+
+<!--  <div>-->
+    <%#= form.label :prediction, style: "display: block" %>
+    <%#= form.text_field :prediction %>
+<!--  </div>-->
+
+<!--  <div>-->
+    <%#= form.label :user_id, style: "display: block" %>
+    <%#= form.text_field :user_id %>
+<!--  </div>-->
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

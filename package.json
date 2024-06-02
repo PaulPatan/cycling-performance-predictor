@@ -1,0 +1,14 @@
+{
+  "name": "mountainbike_coach",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "private": true,
+  "dependencies": {
+    "@hotwired/turbo-rails": "^8.0.4",
+    "@rails/ujs": "^7.0.8-3"
+  }
+}
